@@ -20,7 +20,7 @@ function Controls(){
     }
 
     this.initControls = function() {
-        this.controls = createDiv('Settings');
+        this.controls = createDiv('<b>Settings</b>');
         this.controls.style("color","white");
 
         var conWidth = createDiv("Width of the canvas");
@@ -50,8 +50,7 @@ function Controls(){
         //conGrowth.child(gSlider);
         //controls.child(conGrowth);
         this.controls.child(createP("Settings might require a CTRL+R"));
-        this.controls.child(createElement("br"));
-        this.controls.child(createP('Download <a style="color:white; font-size: 16px;" href="https://github.com/HxxxxxS/AimBoost/archive/v1.zip">me</a> for backup in case you find yourself without internet one day.'));
+        this.controls.child(createP('Download me on <a style="color:white; font-size: 16px;" href="https://github.com/HxxxxxS/AimBoost/">GitHub</a> for backup in case you find yourself without internet one day.'));
     }
 
     this.checkSliders = function() {
