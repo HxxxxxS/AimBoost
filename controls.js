@@ -51,7 +51,7 @@ function Controls(){
         //controls.child(conGrowth);
         this.controls.child(createP("Settings might require a CTRL+R"));
         this.controls.child(createElement("br"));
-        this.controls.child(createP('Download <a style="color:white; font-size: 16px;" href="https://github.com/HxxxxxS/AimBoost/archive/AimBoost_v1.zip">me</a> for backup in case you find yourself without internet one day.'));
+        this.controls.child(createP('Download <a style="color:white; font-size: 16px;" href="https://github.com/HxxxxxS/AimBoost/archive/v1.zip">me</a> for backup in case you find yourself without internet one day.'));
     }
 
     this.checkSliders = function() {
