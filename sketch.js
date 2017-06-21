@@ -1,7 +1,7 @@
 var growth_rate = 0.5; // Target growth rate
 var target_size = 100; // Target size before shrinking
 var spawn_rate = 3;    // Percent chance to spawn each frame (60fps)
-var sound = true;
+var sound = false;
 
 var targets = [];
 var lives = 5;
