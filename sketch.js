@@ -95,8 +95,10 @@ function mousePressed() {
         }
     }
     if(!hit){
-        lives--;
-        missSound.play();
+        if(mouseX>=50 && mouseX <= width-50 && mouseY >= 50 && mouseY <= height-50){
+            lives--;
+            missSound.play();
+        }
     }
 }
 
