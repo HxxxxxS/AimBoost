@@ -14,8 +14,8 @@ var controls;
 var hitSound,missSound;
 
 function preload() {
-    hitSound = loadSound('sounds/score.mp3');
-    missSound = loadSound('sounds/miss.mp3');
+    hitSound = loadSound('sounds/click.wav');
+    missSound = loadSound('sounds/beep.wav');
 }
 
 function setup() {
@@ -37,7 +37,7 @@ function draw() {
     controls.checkSliders();
 
     controls.setVolume();
-    
+
     frameRate(60);
 
     stroke('white');
