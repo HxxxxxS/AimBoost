@@ -1,7 +1,7 @@
 function Target() {
 
-    this.x = Math.floor(Math.random()*(width - 100))+50;
-    this.y = Math.floor(Math.random()*(height - 100))+50;
+    this.x = Math.random() * (width-target_size-canvas_border*2 - target_size/2+canvas_border) + target_size/2+canvas_border;
+    this.y = Math.random() * (height-target_size-canvas_border*2 - target_size/2+canvas_border) + target_size/2+canvas_border;
     this.w = 15;
     this.dir = 1;
     this.col = "red";

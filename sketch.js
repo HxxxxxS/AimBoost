@@ -4,6 +4,7 @@ var spawn_rate = 3;    // Percent chance to spawn each frame (60fps)
 var sound = false;
 
 var targets = [];
+var canvas_border = 50;
 var lives = 5;
 var score = 0;
 
@@ -46,8 +47,8 @@ function draw() {
     textSize(16);
     background(51);
     textAlign(LEFT);
-    rect(50,50,width-100,height-100);
-
+    rect(canvas_border,canvas_border,width-canvas_border*2,height-canvas_border*2);
+    
     if(lives<=0){
         background("red");
         targets = [];
