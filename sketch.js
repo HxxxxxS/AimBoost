@@ -25,7 +25,7 @@ function setup() {
     controls.initStorage();
 
     createCanvas(cWidth, cHeight,"style='width:750px;height:500px;'");
-    
+
     controls.initControls();
 
     targets.push( new Target() );
