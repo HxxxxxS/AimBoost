@@ -49,22 +49,27 @@ function Controls(){
         //gSlider = createSlider(0,1,0.5,0.1)
         //conGrowth.child(gSlider);
         //controls.child(conGrowth);
-        this.controls.child(createP("Settings might require a CTRL+R"));
         this.controls.child(createP('Download me from <a style="color:white; font-size: 16px;" href="https://github.com/HxxxxxS/AimBoost/">GitHub</a> for backup in case you find yourself without internet one day.'));
     }
 
     this.checkSliders = function() {
         if(wSlider.value() != width){
-            localStorage.setItem("cWidth",wSlider.value());
+            cWidth = wSlider.value();
+            localStorage.setItem("cWidth",cWidth);
+            location.reload();
         }
         if(hSlider.value() != height){
-            localStorage.setItem("cHeight",hSlider.value());
+            cHeight = hSlider.value();
+            localStorage.setItem("cHeight",cHeight);
+            location.reload();
         }
         if(rSlider.value() != spawn_rate){
-            localStorage.setItem("spawn_rate",rSlider.value());
+            spawn_rate = rSlider.value();
+            localStorage.setItem("spawn_rate",spawn_rate);
         }
         if(sSlider.value() != target_size){
-            localStorage.setItem("target_size",sSlider.value());
+            target_size = sSlider.value();
+            localStorage.setItem("target_size",target_size);
         }
         //if(gSlider.value() != growth_rate){
         //    localStorage.setItem("growth_rate",gSlider.value())

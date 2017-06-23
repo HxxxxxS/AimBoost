@@ -60,7 +60,6 @@ function draw() {
         targets.push( new Target() );
     }
 
-
     for (var i = targets.length - 1; i >= 0; i--) {
         targets[i].update();
         if(targets[i].w <= 10){
