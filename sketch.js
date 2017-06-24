@@ -65,7 +65,8 @@ function draw() {
         if(targets[i].w <= 10){
             targets.splice(i,1);
             lives--;
-            missSound.play();
+            if(sound)
+                missSound.play();
         }
     }
 
@@ -88,7 +89,8 @@ function mousePressed() {
     for (var i = targets.length - 1; i >= 0; i--) {
         if(is_in_circle(targets[i].x,targets[i].y,targets[i].w,mouseX,mouseY)){
             targets.splice(i,1);
-            hitSound.play();
+            if(sound)
+                hitSound.play();
             hit = true;
             score++;
             break;
@@ -97,7 +99,8 @@ function mousePressed() {
     if(!hit){
         if(mouseX>=50 && mouseX <= width-50 && mouseY >= 50 && mouseY <= height-50){
             lives--;
-            missSound.play();
+            if(sound)
+                missSound.play();
         }
     }
 }
